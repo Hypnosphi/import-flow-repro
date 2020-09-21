@@ -1,0 +1,31 @@
+{
+  "name": "import-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-plugin-import": "2.22.0"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "import"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "import/no-unused-modules": [
+        "error",
+        {
+          "unusedExports": true
+        }
+      ]
+    }
+  }
+}
